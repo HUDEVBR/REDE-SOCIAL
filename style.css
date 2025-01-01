@@ -107,4 +107,28 @@ nav .seacrh-bar{
 nav .seacrh-bar input[type="search"]{
     background: transparent;
     width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-dark);
 }
+
+nav .seacrh-bar input[type="search"]::placeholder{
+    color: var(--color-gray);
+}
+
+nav .create{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* ---- MAIN ---- */
+main{
+    position: relative;
+    top: 5.4rem;
+}
+
+main .container{
+    
+}
+
