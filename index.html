@@ -1,517 +1,570 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friendz - Social Media Website</title>
-    <!-- CDN do site Icon Scout-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <!-- Link de ligação ao CSS-->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <div class="container">
-            <h2 class="logo">
-                Friendz
-            </h2>
-            <div class="search-bar">
-                <i class="uil uil-search"></i>
-                <input type="search" placeholder="Pesquise criadores, inspirações e projetos">
-            </div>
-            <div class="create">
-                <label class="btn btn-primary"  for="create-post">Criar</label>
-                <div class="profile-photo">
-                    <img src="./public/assets/images/profile-1.jpg" alt="">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Friendz - Social Media Website</title>
+        <!-- CDN do site Icon Scout-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <!-- Link de ligação ao CSS-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <h2 class="logo">
+                    Friendz
+                </h2>
+                <div class="search-bar">
+                    <i class="uil uil-search"></i>
+                    <input type="search" placeholder="Pesquise criadores, inspirações e projetos">
                 </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- MAIN -->
-     <main>
-        <div class="container">
-            <!-- COMEÇO DO LADO ESQUERDO-->
-            <div class="left">
-                    <a class="profile">
-                        <div class="profile-photo">
-                            <img src="./public/assets/images/profile-1.jpg" alt="">
-                        </div>
-                        <div class="handle">
-                            <h4>Débora Paula</h4>
-                            <p class="text-muted">
-                                <a href="https://www.instagram.com/bydeborapaula/">@bydeborapaula</a>
-                            </p>
-                        </div>
-                    </a>
-                <!-- BARRA LATERAL -->
-                <div class="sidebar">
-                    <a class="menu-item active">
-                        <span><i class="uil uil-home"></i></span><h3>Home</h3>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-compass"></i></span><h3>Explorar</h3>
-                    </a>
-                    <a class="menu-item" id="notifications">
-                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notificações</h3>
-                        <!--Pop up de Notificações-->
-                        <div class="notifications-popup">
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="./public/assets/images/profile-2.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Keke Benjamin</b> accepted your friend'z request
-                                    <small class="text-muted">2 dias atrás</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="./public/assets/images/profile-3.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>John Doe</b> comentou no seu post
-                                    <small class="text-muted">37 minutos atrás</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="./public/assets/images/profile-4.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Mary Oppong</b> e <b>outros 283</b> gostaram do seu post
-                                    <small class="text-muted">2 dias atrás</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="./public/assets/images/profile-5.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Doris Y. Lartey</b> comentou no post que você está marcado
-                                    <small class="text-muted">2 dias atrás</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="./public/assets/images/profile-6.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Kate Summers</b> comentou no post que você está marcado
-                                    <small class="text-muted">1 hora atrás</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="./public/assets/images/profile-7.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Jane Doe</b> accepted your friend'z request
-                                    <small class="text-muted">6 horas atrás</small>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fim dos Pop up's de Notificações-->
-                    </a>
-                    <a class="menu-item" id="messages-notifications">
-                        <span><i class="uil uil-envelope-alt" ><small class="notification-count">6</small></i></span><h3>Mensagens</h3>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-bookmark"></i></span><h3>Marcações</h3>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-chart-line"></i></span><h3>Análises</h3>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-palette"></i></span><h3>Tema</h3>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-setting"></i></span><h3>Configurações</h3>
-                    </a>
-                </div>
-                <label for="create-post" class="btn btn-primary">Criar postagem</label>
-                <!--Fim da Barra Lateral-->
-            </div>
-            <!-- FIM DO LADO ESQUERDO -->
-
-            <!-- COMEÇO DO MEIO -->
-            <div class="middle">
-                <!-- STORIES -->
-                 <div class="stories">
-                    <div class="story">
-                        <div class="profile-photo">
-                            <img src="./public/assets/images/profile-1.jpg" alt="">
-                        </div>
-                        <p class="name">Seu story</p>
-                    </div>
-                    <div class="story">
-                        <div class="profile-photo">
-                            <img src="./public/assets/images/profile-2.jpg" alt="">
-                        </div>
-                        <p class="name">Lindaci Silva</p>
-                    </div>                    
-                    <div class="story">
-                        <div class="profile-photo">
-                            <img src="./public/assets/images/profile-3.jpg" alt="">
-                        </div>
-                        <p class="name">Eula Paula</p>
-                    </div>
-                    <div class="story">
-                        <div class="profile-photo">
-                            <img src="./public/assets/images/profile-4.jpg" alt="">
-                        </div>
-                        <p class="name">Ana Luiza</p>
-                    </div>
-                    <div class="story">
-                        <div class="profile-photo">
-                            <img src="./public/assets/images/profile-5.jpg" alt="">
-                        </div>
-                        <p class="name">Ana Paula</p>
-                    </div>
-                    <div class="story">
-                        <div class="profile-photo">
-                            <img src="./public/assets/images/profile-6.jpg" alt="">
-                        </div>
-                        <p class="name">Tina White</p>
-                    </div>
-                 </div>
-                 <!-- FIM DOS STORIES -->
-                  <form class="create-post">
+                <div class="create">
+                    <label class="btn btn-primary"  for="create-post">Criar</label>
                     <div class="profile-photo">
-                        <img src="./public/assets/images/profile-1.jpg" alt="">
+                        <img src="/images/profile-1.jpg" alt="">
                     </div>
-                    <input type="text" placeholder="O que você está pensando ?" id="create-post">
-                    <input type="submit" value="Postar" class="btn btn-primary">
-                  </form>
-                  <!-- FEEDS -->
-                  <div class="feeds">
-                    <!-- FEED 1 -->
-                    <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-photo">
-                                    <img src="./public/assets/images/profile-1.jpg" alt="">        
-                                </div>
-                                <div class="ingo">
-                                    <h3>Debora Paula</h3>
-                                    <small>RIO DE JANEIRO, 15 MINUTOS ATRÁS</small>
-                                </div>
-                            </div>
-                            <span class="edit">
-                                <i class="uil uil-ellipsis-h"></i>
-                            </span>
-                        </div>
-
-                        <div class="photo">
-                           <img src="./public/assets/images/feed-1.jpg" alt=""> 
-                        </div>
-                        <div class="action-buttons">
-                            <div class="interaction-buttons">
-                                <span><i class="uil uil-heart"></i></span>
-                                <span><i class="uil uil-comment-dots"></i></span>
-                                <span><i class="uil uil-share-alt"></i></span>
-                            </div>
-                            <div class="bookmark">
-                                <span><i class="uil uil-bookmark-full"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="liked-by">
-                            <span><img src="./public/assets/images/profile-10.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-4.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-15.jpg" alt=""></span>
-                            <p>Curtido por <b>Hudson Souza</b> e <b>2.317 outras pessoas</b> </p>
-                        </div>
-
-                        <div class="caption">
-                            <p><b>Debora Paula</b> Casamento mais lindo do ano da prima Raquel. 
-                                <span class="hash-tag"> #wedding #casamento #filhos</span></p>
-                        </div>
-                        <div class="comments text-muted">Ver os 305 comentários</div>
-                    </div>
-                    <!--FIM DO FEED 1-->
-                    <!-- FEED 2 -->
-                    <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-photo">
-                                    <img src="./public/assets/images/profile-2.jpg" alt="">        
-                                </div>
-                                <div class="ingo">
-                                    <h3>Lindaci Silva</h3>
-                                    <small>RIO DE JANEIRO, 3 HORAS  ATRÁS</small>
-                                </div>
-                            </div>
-                            <span class="edit">
-                                <i class="uil uil-ellipsis-h"></i>
-                            </span>
-                        </div>
-
-                        <div class="photo">
-                           <img src="./public/assets/images/feed-2.webp" alt=""> 
-                        </div>
-                        <div class="action-buttons">
-                            <div class="interaction-buttons">
-                                <span><i class="uil uil-heart"></i></span>
-                                <span><i class="uil uil-comment-dots"></i></span>
-                                <span><i class="uil uil-share-alt"></i></span>
-                            </div>
-                            <div class="bookmark">
-                                <span><i class="uil uil-bookmark-full"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="liked-by">
-                            <span><img src="./public/assets/images/profile-8.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-6.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-13.jpg" alt=""></span>
-                            <p>Curtido por <b>Hudson Souza</b> e <b>2.317 outras pessoas</b> </p>
-                        </div>
-
-                        <div class="caption">
-                            <p><b>Lindaci Silva</b> SEGREDOS DA MINHA GRAVIDEZ QUE NUNCA CONTEI. 
-                                <span class="hash-tag"> #lindacimaede5 #maede5 #gravidez</span></p>
-                        </div>
-                        <div class="comments text-muted">Ver os 277 comentários</div>
-                    </div>
-                    <!--FIM DO FEED 2-->
-                    <!-- FEED 3 -->
-                    <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-photo">
-                                    <img src="./public/assets/images/profile-3.jpg" alt="">        
-                                </div>
-                                <div class="ingo">
-                                    <h3>Eula Paula</h3>
-                                    <small>RIO DE JANEIRO, 15 DIAS ATRÁS</small>
-                                </div>
-                            </div>
-                            <span class="edit">
-                                <i class="uil uil-ellipsis-h"></i>
-                            </span>
-                        </div>
-
-                        <div class="photo">
-                           <img src="./public/assets/images/feed-3.jpg" alt=""> 
-                        </div>
-                        <div class="action-buttons">
-                            <div class="interaction-buttons">
-                                <span><i class="uil uil-heart"></i></span>
-                                <span><i class="uil uil-comment-dots"></i></span>
-                                <span><i class="uil uil-share-alt"></i></span>
-                            </div>
-                            <div class="bookmark">
-                                <span><i class="uil uil-bookmark-full"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="liked-by">
-                            <span><img src="./public/assets/images/profile-7.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-5.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-8.jpg" alt=""></span>
-                            <p>Curtido por <b>Hudson Souza</b> e <b>1.847 outras pessoas</b> </p>
-                        </div>
-
-                        <div class="caption">
-                            <p><b>Eula Paula</b> Vocês me fazem mãe ❤️ Obrigada por existirem!
-                                Obrigada Deus, pelas heranças que o Senhor me confiou!
-                                Feliz dia das mães!!. 
-                                <span class="hash-tag"> #diadasmaes #filhos #heranca #Deus</span></p>
-                        </div>
-                        <div class="comments text-muted">Ver os 277 comentários</div>
-                    </div>
-                    <!--FIM DO FEED 3-->
-                    <!-- FEED 4 -->
-                    <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-photo">
-                                    <img src="./public/assets/images/profile-4.jpg" alt="">        
-                                </div>
-                                <div class="ingo">
-                                    <h3>Ana Luiza</h3>
-                                    <small>RIO DE JANEIRO, ONTEM</small>
-                                </div>
-                            </div>
-                            <span class="edit">
-                                <i class="uil uil-ellipsis-h"></i>
-                            </span>
-                        </div>
-
-                        <div class="photo">
-                           <img src="./public/assets/images/feed-4.jpg" alt=""> 
-                        </div>
-                        <div class="action-buttons">
-                            <div class="interaction-buttons">
-                                <span><i class="uil uil-heart"></i></span>
-                                <span><i class="uil uil-comment-dots"></i></span>
-                                <span><i class="uil uil-share-alt"></i></span>
-                            </div>
-                            <div class="bookmark">
-                                <span><i class="uil uil-bookmark-full"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="liked-by">
-                            <span><img src="./public/assets/images/profile-10.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-4.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-15.jpg" alt=""></span>
-                            <p>Curtido por <b>Hudson Souza</b> e <b>5.137 outras pessoas</b> </p>
-                        </div>
-
-                        <div class="caption">
-                            <p><b>Ana Luiza</b> A mais linda formatura do ano. 
-                                <span class="hash-tag"> #lifestyle</span></p>
-                        </div>
-                        <div class="comments text-muted">Ver os 149 comentários</div>
-                    </div>
-                    <!--FIM DO FEED 4-->
-                    <!-- FEED 5 -->
-                    <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-photo">
-                                    <img src="./public/assets/images/profile-5.jpg" alt="">        
-                                </div>
-                                <div class="ingo">
-                                    <h3>Ana Paula</h3>
-                                    <small>RIO DE JANEIRO, 2 HORAS ATRÁS</small>
-                                </div>
-                            </div>
-                            <span class="edit">
-                                <i class="uil uil-ellipsis-h"></i>
-                            </span>
-                        </div>
-
-                        <div class="photo">
-                           <img src="./public/assets/images/feed-5.jpg" alt=""> 
-                        </div>
-                        <div class="action-buttons">
-                            <div class="interaction-buttons">
-                                <span><i class="uil uil-heart"></i></span>
-                                <span><i class="uil uil-comment-dots"></i></span>
-                                <span><i class="uil uil-share-alt"></i></span>
-                            </div>
-                            <div class="bookmark">
-                                <span><i class="uil uil-bookmark-full"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="liked-by">
-                            <span><img src="./public/assets/images/profile-10.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-4.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-15.jpg" alt=""></span>
-                            <p>Curtido por <b>Hudson Souza</b> e <b>3.269 outras pessoas</b> </p>
-                        </div>
-
-                        <div class="caption">
-                            <p><b>Ana Paula</b> Furo humanizado da princesa👑 mais linda de Nova Iguaçu 
-                                <span class="hash-tag"> #lifestyle</span></p>
-                        </div>
-                        <div class="comments text-muted">Ver os 487 comentários</div>
-                    </div>
-                    <!--FIM DO FEED 5-->
-                    <!-- FEED 6 -->
-                    <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-photo">
-                                    <img src="./public/assets/images/profile-6.jpg" alt="">        
-                                </div>
-                                <div class="ingo">
-                                    <h3>Daiana Silva</h3>
-                                    <small>RIO DE JANEIRO, 1 MINUTO ATRÁS</small>
-                                </div>
-                            </div>
-                            <span class="edit">
-                                <i class="uil uil-ellipsis-h"></i>
-                            </span>
-                        </div>
-
-                        <div class="photo">
-                           <img src="./public/assets/images/feed-6.jpg" alt=""> 
-                        </div>
-                        <div class="action-buttons">
-                            <div class="interaction-buttons">
-                                <span><i class="uil uil-heart"></i></span>
-                                <span><i class="uil uil-comment-dots"></i></span>
-                                <span><i class="uil uil-share-alt"></i></span>
-                            </div>
-                            <div class="bookmark">
-                                <span><i class="uil uil-bookmark-full"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="liked-by">
-                            <span><img src="./public/assets/images/profile-10.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-4.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-15.jpg" alt=""></span>
-                            <p>Curtido por <b>Hudson Souza</b> e <b>2.317 outras pessoas</b> </p>
-                        </div>
-
-                        <div class="caption">
-                            <p><b>Daiana Silva</b> Sejam todos muito bem vindos ao meu perfil! Fiz esse post para que conheçam um pouco sobre mim. Espero que gostem! Bjs! 
-                                <span class="hash-tag"> #consultoriadeestilo #consultoriadeimagem #imagemeestilo</span></p>
-                        </div>
-                        <div class="comments text-muted">Ver os 568 comentários</div>
-                    </div>
-                    <!--FIM DO FEED 6-->
-                    <!-- FEED 7 -->
-                    <!-- <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-photo">
-                                    <img src="./public/assets/images/profile-13.jpg" alt="">        
-                                </div>
-                                <div class="ingo">
-                                    <h3>Lana Rose</h3>
-                                    <small>RIO DE JANEIRO, 15 MINUTOS ATRÁS</small>
-                                </div>
-                            </div>
-                            <span class="edit">
-                                <i class="uil uil-ellipsis-h"></i>
-                            </span>
-                        </div>
-
-                        <div class="photo">
-                           <img src="./public/assets/images/feed-1.jpg" alt=""> 
-                        </div>
-                        <div class="action-buttons">
-                            <div class="interaction-buttons">
-                                <span><i class="uil uil-heart"></i></span>
-                                <span><i class="uil uil-comment-dots"></i></span>
-                                <span><i class="uil uil-share-alt"></i></span>
-                            </div>
-                            <div class="bookmark">
-                                <span><i class="uil uil-bookmark-full"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="liked-by">
-                            <span><img src="./public/assets/images/profile-10.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-4.jpg" alt=""></span>
-                            <span><img src="./public/assets/images/profile-15.jpg" alt=""></span>
-                            <p>Curtido por <b>Hudson Souza</b> e <b>2.317 outras pessoas</b> </p>
-                        </div>
-
-                        <div class="caption">
-                            <p><b>Lana Rose</b> Lorem ipsum dolor sit quisquam eius. 
-                                <span class="hash-tag"> #lifestyle</span></p>
-                        </div>
-                        <div class="comments text-muted">Ver os 277 comentários</div>
-                    </div> -->
-                    <!--FIM DO FEED 7-->
-                  </div>
+                </div>
             </div>
-            <!-- FIM DO MEIO -->
+        </nav>
 
-            <!-- COMEÇO DO LADO DIREITO -->
-            <div class="right">
+        <!-- MAIN -->
+        <main>
+            <div class="container">
+                <!-- COMEÇO DO LADO ESQUERDO-->
+                <div class="left">
+                        <a class="profile">
+                            <div class="profile-photo">
+                                <img src="/images/profile-1.jpg" alt="">
+                            </div>
+                            <div class="handle">
+                                <h4>Débora Paula</h4>
+                                <p class="text-muted">
+                                    <a href="https://www.instagram.com/bydeborapaula/">@bydeborapaula</a>
+                                </p>
+                            </div>
+                        </a>
+                    <!-- BARRA LATERAL -->
+                    <div class="sidebar">
+                        <a class="menu-item active">
+                            <span><i class="uil uil-home"></i></span><h3>Home</h3>
+                        </a>
+                        <a class="menu-item">
+                            <span><i class="uil uil-compass"></i></span><h3>Explorar</h3>
+                        </a>
+                        <a class="menu-item" id="notifications">
+                            <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notificações</h3>
+                            <!--Pop up de Notificações-->
+                            <div class="notifications-popup">
+                                <div>
+                                    <div class="profile-photo">
+                                        <img src="/images/profile-2.jpg" alt="">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Keke Benjamin</b> accepted your friend'z request
+                                        <small class="text-muted">2 dias atrás</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="profile-photo">
+                                        <img src="/images/profile-3.jpg" alt="">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>John Doe</b> comentou no seu post
+                                        <small class="text-muted">37 minutos atrás</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="profile-photo">
+                                        <img src="/images/profile-4.jpg" alt="">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Mary Oppong</b> e <b>outros 283</b> gostaram do seu post
+                                        <small class="text-muted">2 dias atrás</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="profile-photo">
+                                        <img src="/images/profile-5.jpg" alt="">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Doris Y. Lartey</b> comentou no post que você está marcado
+                                        <small class="text-muted">2 dias atrás</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="profile-photo">
+                                        <img src="/images/profile-6.jpg" alt="">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Kate Summers</b> comentou no post que você está marcado
+                                        <small class="text-muted">1 hora atrás</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="profile-photo">
+                                        <img src="/images/profile-7.jpg" alt="">
+                                    </div>
+                                    <div class="notification-body">
+                                        <b>Jane Doe</b> accepted your friend'z request
+                                        <small class="text-muted">6 horas atrás</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Fim dos Pop up's de Notificações-->
+                        </a>
+                        <a class="menu-item" id="messages-notifications">
+                            <span><i class="uil uil-envelope-alt" ><small class="notification-count">6</small></i></span><h3>Mensagens</h3>
+                        </a>
+                        <a class="menu-item">
+                            <span><i class="uil uil-bookmark"></i></span><h3>Marcações</h3>
+                        </a>
+                        <a class="menu-item">
+                            <span><i class="uil uil-chart-line"></i></span><h3>Análises</h3>
+                        </a>
+                        <a class="menu-item">
+                            <span><i class="uil uil-palette"></i></span><h3>Tema</h3>
+                        </a>
+                        <a class="menu-item">
+                            <span><i class="uil uil-setting"></i></span><h3>Configurações</h3>
+                        </a>
+                    </div>
+                    <label for="create-post" class="btn btn-primary">Criar postagem</label>
+                    <!--Fim da Barra Lateral-->
+                </div>
+                <!-- FIM DO LADO ESQUERDO -->
 
+                <!-- COMEÇO DO MEIO -->
+                <div class="middle">
+                    <!-- STORIES -->
+                    <div class="stories">
+                        <div class="story">
+                            <div class="profile-photo">
+                                <img src="/images/profile-1.jpg" alt="">
+                            </div>
+                            <p class="name">Seu story</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile-photo">
+                                <img src="/images/profile-2.jpg" alt="">
+                            </div>
+                            <p class="name">Lindaci Silva</p>
+                        </div>                    
+                        <div class="story">
+                            <div class="profile-photo">
+                                <img src="/images/profile-3.jpg" alt="">
+                            </div>
+                            <p class="name">Eula Paula</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile-photo">
+                                <img src="/images/profile-4.jpg" alt="">
+                            </div>
+                            <p class="name">Ana Luiza</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile-photo">
+                                <img src="/images/profile-5.jpg" alt="">
+                            </div>
+                            <p class="name">Ana Paula</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile-photo">
+                                <img src="/images/profile-6.jpg" alt="">
+                            </div>
+                            <p class="name">Tina White</p>
+                        </div>
+                    </div>
+                    <!-- FIM DOS STORIES -->
+                    <form class="create-post">
+                        <div class="profile-photo">
+                            <img src="/images/profile-1.jpg" alt="">
+                        </div>
+                        <input type="text" placeholder="O que você está pensando ?" id="create-post">
+                        <input type="submit" value="Postar" class="btn btn-primary">
+                    </form>
+                    <!-- FEEDS -->
+                    <div class="feeds">
+                        <!-- FEED 1 -->
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="/images/profile-1.jpg" alt="">        
+                                    </div>
+                                    <div class="ingo">
+                                        <h3>Debora Paula</h3>
+                                        <small>RIO DE JANEIRO, 15 MINUTOS ATRÁS</small>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                            <img src="/images/feed-1.jpg" alt=""> 
+                            </div>
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="/images/profile-10.jpg" alt=""></span>
+                                <span><img src="/images/profile-4.jpg" alt=""></span>
+                                <span><img src="/images/profile-15.jpg" alt=""></span>
+                                <p>Curtido por <b>Hudson Souza</b> e <b>2.317 outras pessoas</b> </p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Debora Paula</b> Casamento mais lindo do ano da prima Raquel. 
+                                    <span class="hash-tag"> #wedding #casamento #filhos</span></p>
+                            </div>
+                            <div class="comments text-muted">Ver os 305 comentários</div>
+                        </div>
+                        <!--FIM DO FEED 1-->
+                        <!-- FEED 2 -->
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="/images/profile-2.jpg" alt="">        
+                                    </div>
+                                    <div class="ingo">
+                                        <h3>Lindaci Silva</h3>
+                                        <small>RIO DE JANEIRO, 3 HORAS  ATRÁS</small>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                            <img src="/images/feed-2.webp" alt=""> 
+                            </div>
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="/images/profile-8.jpg" alt=""></span>
+                                <span><img src="/images/profile-6.jpg" alt=""></span>
+                                <span><img src="/images/profile-13.jpg" alt=""></span>
+                                <p>Curtido por <b>Hudson Souza</b> e <b>2.317 outras pessoas</b> </p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Lindaci Silva</b> SEGREDOS DA MINHA GRAVIDEZ QUE NUNCA CONTEI. 
+                                    <span class="hash-tag"> #lindacimaede5 #maede5 #gravidez</span></p>
+                            </div>
+                            <div class="comments text-muted">Ver os 277 comentários</div>
+                        </div>
+                        <!--FIM DO FEED 2-->
+                        <!-- FEED 3 -->
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="/images/profile-3.jpg" alt="">        
+                                    </div>
+                                    <div class="ingo">
+                                        <h3>Eula Paula</h3>
+                                        <small>RIO DE JANEIRO, 15 DIAS ATRÁS</small>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                            <img src="/images/feed-3.jpg" alt=""> 
+                            </div>
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="/images/profile-7.jpg" alt=""></span>
+                                <span><img src="/images/profile-5.jpg" alt=""></span>
+                                <span><img src="/images/profile-8.jpg" alt=""></span>
+                                <p>Curtido por <b>Hudson Souza</b> e <b>1.847 outras pessoas</b> </p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Eula Paula</b> Vocês me fazem mãe ❤️ Obrigada por existirem!
+                                    Obrigada Deus, pelas heranças que o Senhor me confiou!
+                                    Feliz dia das mães!!. 
+                                    <span class="hash-tag"> #diadasmaes #filhos #heranca #Deus</span></p>
+                            </div>
+                            <div class="comments text-muted">Ver os 277 comentários</div>
+                        </div>
+                        <!--FIM DO FEED 3-->
+                        <!-- FEED 4 -->
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="/images/profile-4.jpg" alt="">        
+                                    </div>
+                                    <div class="ingo">
+                                        <h3>Ana Luiza</h3>
+                                        <small>RIO DE JANEIRO, ONTEM</small>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                            <img src="/images/feed-4.jpg" alt=""> 
+                            </div>
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="/images/profile-10.jpg" alt=""></span>
+                                <span><img src="/images/profile-4.jpg" alt=""></span>
+                                <span><img src="/images/profile-15.jpg" alt=""></span>
+                                <p>Curtido por <b>Hudson Souza</b> e <b>5.137 outras pessoas</b> </p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Ana Luiza</b> A mais linda formatura do ano. 
+                                    <span class="hash-tag"> #lifestyle</span></p>
+                            </div>
+                            <div class="comments text-muted">Ver os 149 comentários</div>
+                        </div>
+                        <!--FIM DO FEED 4-->
+                        <!-- FEED 5 -->
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="/images/profile-5.jpg" alt="">        
+                                    </div>
+                                    <div class="ingo">
+                                        <h3>Ana Paula</h3>
+                                        <small>RIO DE JANEIRO, 2 HORAS ATRÁS</small>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                            <img src="/images/feed-5.jpg" alt=""> 
+                            </div>
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="/images/profile-10.jpg" alt=""></span>
+                                <span><img src="/images/profile-4.jpg" alt=""></span>
+                                <span><img src="/images/profile-15.jpg" alt=""></span>
+                                <p>Curtido por <b>Hudson Souza</b> e <b>3.269 outras pessoas</b> </p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Ana Paula</b> Furo humanizado da princesa👑 mais linda de Nova Iguaçu 
+                                    <span class="hash-tag"> #lifestyle</span></p>
+                            </div>
+                            <div class="comments text-muted">Ver os 487 comentários</div>
+                        </div>
+                        <!--FIM DO FEED 5-->
+                        <!-- FEED 6 -->
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="/images/profile-6.jpg" alt="">        
+                                    </div>
+                                    <div class="ingo">
+                                        <h3>Daiana Silva</h3>
+                                        <small>RIO DE JANEIRO, 1 MINUTO ATRÁS</small>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                            <img src="/images/feed-6.jpg" alt=""> 
+                            </div>
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="/images/profile-10.jpg" alt=""></span>
+                                <span><img src="/images/profile-4.jpg" alt=""></span>
+                                <span><img src="/images/profile-15.jpg" alt=""></span>
+                                <p>Curtido por <b>Hudson Souza</b> e <b>2.317 outras pessoas</b> </p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Daiana Silva</b> Sejam todos muito bem vindos ao meu perfil! Fiz esse post para que conheçam um pouco sobre mim. Espero que gostem! Bjs! 
+                                    <span class="hash-tag"> #consultoriadeestilo #consultoriadeimagem #imagemeestilo</span></p>
+                            </div>
+                            <div class="comments text-muted">Ver os 568 comentários</div>
+                        </div>
+                        <!--FIM DO FEED 6-->
+                        <!-- FEED 7 -->
+                        <!-- <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="/images/profile-13.jpg" alt="">        
+                                    </div>
+                                    <div class="ingo">
+                                        <h3>Lana Rose</h3>
+                                        <small>RIO DE JANEIRO, 15 MINUTOS ATRÁS</small>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                            <img src="/images/feed-1.jpg" alt=""> 
+                            </div>
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="/images/profile-10.jpg" alt=""></span>
+                                <span><img src="/images/profile-4.jpg" alt=""></span>
+                                <span><img src="/images/profile-15.jpg" alt=""></span>
+                                <p>Curtido por <b>Hudson Souza</b> e <b>2.317 outras pessoas</b> </p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Lana Rose</b> Lorem ipsum dolor sit quisquam eius. 
+                                    <span class="hash-tag"> #lifestyle</span></p>
+                            </div>
+                            <div class="comments text-muted">Ver os 277 comentários</div>
+                        </div> -->
+                        <!--FIM DO FEED -->
+                    </div>
+                    <!--FIM DOS FEEDS -->
+                </div>
+                <!-- FIM DO MEIO -->
+
+                <!-- COMEÇO DO LADO DIREITO -->
+                <div class="right">
+                    <div class="messages">
+                        <div class="heading">
+                            <h4>Mensagens</h4><i class="uil uil-edit"></i>
+                        </div>
+                        <!-- BARRA DE PESQUISA-->
+                         <div class="search-bar">
+                            <i class="uil uil-search"></i>
+                            <input type="search" placeholder="Pesquisar mensagens" id="message-search">
+                         </div>
+                         <!-- CATEGORIA DE MENSAGENS -->
+                          <div class="category">
+                            <h6 class="active">Principais</h6>
+                            <h6>Geral</h6>
+                            <h6 class="message-requests">Solicitações(7)</h6>
+                          </div>
+                          <!-- MENSAGENS -->
+                            <div class="message">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-17.jpg" alt="">
+                                </div>
+                                <div class="message-body">
+                                    <h5>Luiz Claúdio</h5>
+                                    <p class="text-muted">Fala maninha, tuudo bem ?!</p>
+                                </div>
+                           </div>
+                    </div>
+                    <!-- FIM DAS MENSAGENS -->
+
+                    <!-- SOLICITAÇÕES DE AMIZADE -->
+                     <div class="friend-requests">
+                        <h4>Solicitações</h4>
+                        <div class="request">
+                            <div class="info">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-13.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h5>Paulo Victor</h5>
+                                    <p class="text-muted">
+                                        8 amigos em comum
+                                    </p>
+                                    <div class="action">
+                                        <button class="btn btn-primary">
+                                            Aceitar
+                                        </button>
+                                        <button class="btn">
+                                            Recusar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                <!-- FIM DO LADO DIREITO -->
             </div>
-            <!-- FIM DO LADO DIREITO -->
-        </div>
-     </main>
-</body>
-<script src="index.js"></script>
-</html>
+        </main>
+    </body>
+    <script src="index.js"></script>
+    </html>

@@ -309,22 +309,22 @@ main .container .left .profile a{
  }
 
 .middle .stories .story:nth-child(1){
-    background: url("./public/assets/images/story-1.jpg") no-repeat center center/cover;
+    background: url("/images/story-1.jpg") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(2){
-    background: url("./public/assets/images/story-2.jpg") no-repeat center center/cover;
+    background: url("/images/story-2.jpg") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(3){
-    background: url("./public/assets/images/story-3.jpg") no-repeat center center/cover;
+    background: url("/images/story-3.jpg") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(4){
-    background: url("./public/assets/images/story-4.jpg") no-repeat center center/cover;
+    background: url("/images/story-4.jpg") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(5){
-    background: url("./public/assets/images/story-5.jpg") no-repeat center center/cover;
+    background: url("/images/story-5.jpg") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(6){
-    background: url("./public/assets/images/story-6.jpg") no-repeat center center/cover;
+    background: url("/images/story-6.jpg") no-repeat center center/cover;
 }
 
 .middle .story .profile-photo{
@@ -382,7 +382,7 @@ main .container .left .profile a{
     margin: 0.7rem 0;
 }
 
-.middle .fee .action-buttons{
+.middle .feed .action-buttons{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -410,4 +410,17 @@ main .container .left .profile a{
 
 .middle .liked-by p{
     margin-left: 0.5rem;
+}
+
+/* ----------------------- DIREITA ----------------------- */
+
+main .container .right{
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-right);
+    bottom: 0;
+}
+
+.right .messages{
+    background: var(--color-white);
 }
